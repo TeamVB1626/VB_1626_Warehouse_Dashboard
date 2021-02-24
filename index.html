@@ -111,6 +111,7 @@
                     marker.bindPopup(jsonDataObject[j].City, {
                             autoClose: false
                     });
+		 jsonDataObject[j].Dispatched = "Yes"	
                  jsonDataObject[j].Shipped = "NO"
                 }
 
@@ -119,6 +120,8 @@
                     marker.bindPopup(jsonDataObject[j].City, {
                             autoClose: false
                     });
+		 jsonDataObject[j].Dispatched = "Yes"	
+                 jsonDataObject[j].Shipped = "YES"
                 }
                 map.addLayer(marker);
                 marker.on('click', onClick_Marker)
